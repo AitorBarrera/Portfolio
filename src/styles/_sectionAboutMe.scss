@@ -1,0 +1,45 @@
+@use "globals" as *; 
+
+section.sectionAboutMe{
+    text-align: center;
+
+    p{
+        text-align: justify;
+    }
+
+    .professionalNetworkRow{
+        margin-top: 2rem;
+
+        .row{
+            @include flex-container(row, space-between, start);
+
+            .card{
+                width: 31%;
+                color: $color-dark-red;
+                
+                .cardContainer{
+                    @include flex-container(row, space-between, center);
+
+                    .imgContainer{
+                        padding: 0.5rem 0 0 0;
+                        width: 35%;
+                        
+
+                        img{
+                            fill: $color-dark-red;
+                            width: 100%;
+                        }
+                    }
+
+                    .text{
+                        width: 65%;
+
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

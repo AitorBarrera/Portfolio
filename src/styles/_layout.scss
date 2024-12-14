@@ -1,0 +1,67 @@
+@use "globals" as *; 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family-Lato;
+}
+
+body{
+    background-color: $color-black;
+    @include grid-container-columns(8);
+}
+
+#app{
+    grid-column: 1 / 9;
+}
+
+h1{
+    @include font(h1);
+    color: $color-yellow;
+    text-shadow: 4px 4px $color-dark-red;
+}
+
+h2{
+    @include font(h2);
+    color: $color-red;
+}
+
+h3{
+    @include font(h3);
+    color: $color-yellow;
+    text-shadow: 4px 4px $color-dark-red;
+}
+
+p{
+    @include font(paragraph);
+    color: $color-white;
+
+    @include respond-to(large){
+        @include font("smallParagraph");
+    };
+}
+
+figcaption{
+    @include font(tag);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.smallParagraph{
+    @include font(smallParagraph);
+    color: $color-white;
+}
+
+.margin-auto{
+    margin: $margin-x-container;
+}
+
+.row{
+    @include respond-to(medium){
+        flex-direction: column;
+    }
+}

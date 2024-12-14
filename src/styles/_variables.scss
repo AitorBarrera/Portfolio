@@ -1,0 +1,90 @@
+@font-face {
+    font-family: BrightRoyale;
+    src: url(../assets/fonts/Bright-Royale-BF675278ce23381.woff);
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(../assets/fonts/Figtree/Figtree-VariableFont_wght.woff);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/Lato-Regular.woff);
+}
+
+$font-family-BrigthRoyale: BrightRoyale;
+$font-family-Figtree: Figtree;
+$font-family-Lato: Lato;
+/* Mode 1 */
+/* color */
+$color-black: #28231d;
+$color-dark-red: #472d30;
+$color-green: #c9cba3;
+$color-orange: #e26d5c;
+$color-red: #723d46;
+$color-white: #fffada;
+$color-yellow: #ffe1a8;
+$logo-bootstrap: #8319fb;
+$logo-css: #004ce8;
+$logo-html: #e4552d;
+$logo-js: #f7e025;
+$logo-nodejs: #87cf30;
+$logo-react: #6cdbf9;
+$logo-sass: #ce6b9c;
+/* Mode 1 */
+/* number */
+$font-line-height-tag: 0.75rem;
+$font-line-height-small-paragraph: 1.125rem;
+$font-line-height-paragraph: 1.875rem;
+$font-line-height-h3: 3rem;
+$font-line-height-h2: 3.75rem;
+$font-line-height-h1: 4.5rem;
+$font-size-tag: 0.5rem;
+$font-size-small-paragraph: 0.75rem;
+$font-size-paragraph: 1.25rem;
+$font-size-h3: 1.5rem;
+$font-size-h2: 2.25rem;
+$font-size-h1: 3.75rem;
+/* string */
+$font-typography-paragraph: Figtree;
+$font-typography-tag: Lato;
+$font-typography-titles: Bright Royale;
+/* Mode 1 */
+/* number */
+$margin-x-container: 0 20rem;
+
+$text-shadow-dark-red: 4px 4px $color-dark-red;
+
+$font-styles: (
+  tag: (
+    font-size: $font-size-tag,
+    line-height: $font-line-height-tag,
+    font-family: $font-family-Lato
+  ),
+  smallParagraph: (
+    font-size: $font-size-small-paragraph,
+    line-height: $font-line-height-small-paragraph,
+    font-family: $font-family-Figtree
+  ),
+  paragraph: (
+    font-size: $font-size-paragraph,
+    line-height: $font-line-height-paragraph,
+    font-family: $font-family-Figtree
+  ),
+  h3: (
+    font-size: $font-size-h3,
+    line-height: $font-line-height-h3,
+    font-family: $font-family-BrigthRoyale
+  ),
+  h2: (
+    font-size: $font-size-h2,
+    line-height: $font-line-height-h2,
+    font-family: $font-family-BrigthRoyale
+  ),
+  h1: (
+    font-size: $font-size-h1,
+    line-height: $font-line-height-h1,
+    font-family: $font-family-BrigthRoyale
+  )
+);

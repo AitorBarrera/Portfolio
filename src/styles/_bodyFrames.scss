@@ -1,0 +1,24 @@
+@use "globals" as *; 
+
+.frameRed{
+    margin: 2rem;
+    display: flex;
+
+    .frameOrange{
+        border-color: $color-orange;
+        display: flex;
+        width: 100%;
+
+        .frameYellow{
+            border-color: $color-yellow;
+            width: 100%;
+        }
+    }
+}
+
+.frameRed, .frameOrange, .frameYellow{
+    border: 3rem solid;
+    border-color: $color-dark-red;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}

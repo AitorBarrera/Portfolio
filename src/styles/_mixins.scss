@@ -1,0 +1,46 @@
+@use "sass:map";
+@use "variables" as *;
+
+@mixin respond-to($breakpoint) {
+  $breakpoints: (
+    "small": "max-width: 400px",
+    "medium": "max-width: 900px",
+    "large": "max-width: 1500px"
+  );
+
+  $query: map.get($breakpoints, $breakpoint);
+
+  @if $query {
+    @media (#{$query}) {
+      @content;
+    }
+
+  } @else {
+      @error "No se encontró el breakpoint `#{$breakpoint}`.";
+  }
+}
+
+
+// Contenedor flex
+@mixin flex-container($direction: row, $justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+// Selecciona el tipo de texto y asigna el size, family y spacing con un mixin
+@mixin font($type) {
+  $style: map.get($font-styles, $type);
+
+  font-size: map.get($style, font-size);
+  line-height: map.get($style, line-height);
+  font-family: map.get($style, font-family);
+}
+
+@mixin grid-container-columns($numberColumns){
+  display: grid;
+  grid-template-columns: repeat($numberColumns,1fr);
+  grid-auto-rows: 1fr;
+  gap: 10px;
+}

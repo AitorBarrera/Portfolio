@@ -1,13 +1,129 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio AItor</title>
-  </head>
-  <body>
-    <div id="app">AAAAAAAA</div>
-    <script type="module" src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio AItor</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="frameRed">
+      <div class="frameOrange">
+        <div class="frameYellow">
+          <section class="sectionAboutMe">
+            <div class="sectionAboutMeContainer">
+              <h2 class="margin-auto">HELLO, I AM</h2>
+              <h1>AITOR GONZALEZ BARRERA</h1>
+              <div class="margin-auto">
+                <h3>FULL-STACK DEVELOPER</h3>
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Donec rutrum,
+                  velit a rhoncus porttitor, enim sem tempus mauris,
+                  at imperdiet mauris sem at arcu. Cras feugiat,
+                  est vitae condimentum hendrerit,
+                  leo turpis imperdiet erat, at elementum mauris ex sit amet lorem.</p>
+              </div>
+              <div class="professionalNetworkRow margin-auto">
+                <div class="row">
+                  <div class="card">
+                    <a href="">
+                      <hr>
+                      <div class="cardContainer">
+                        <div class="imgContainer">
+                          <img src="assets/icons_contact/github.svg" alt="github_logo" srcset="">
+                        </div>
+                        <div class="text">
+                          <h3>GITHUB</h3>
+                          <p class="smallParagraph">/AitorBarrera</p>
+                        </div>
+                      </div>
+                  </div>
+                  </a>
+                  <div class="card">
+                    <a href="">
+                      <hr>
+                      <div class="cardContainer">
+                        <div class="imgContainer">
+                          <img src="assets/icons_contact/linkedn.svg" alt="linkedn_logo" srcset="">
+                        </div>
+                        <div class="text">
+                          <h3>LINKEDIN</h3>
+                          <p class="smallParagraph">/barreraaitor</p>
+                        </div>
+                      </div>
+                  </div>
+                  </a>
+                  <div class="card">
+                    <a href="">
+                      <hr>
+                      <div class="cardContainer">
+                        <div class="imgContainer">
+                          <img src="assets/icons_contact/devto.svg" alt="devto_logo" srcset="">
+                        </div>
+                        <div class="text">
+                          <h3>DEV.TO</h3>
+                          <p class="smallParagraph">/barrera</p>
+                        </div>
+                      </div>
+                  </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sectionProjects">
+            <h2>Projects</h2>
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/imgProjects/home_page.png" alt=""></div>
+                <div class="swiper-slide"><img src="assets/imgProjects/vango.png" alt=""></div>
+                <div class="swiper-slide"><img src="assets/imgProjects/portfolio.png" alt=""></div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </section>
+          <section class="sectionSkills">
+            <h2>Skills</h2>
+
+          </section>
+          <section class="sectionContact">
+            <h2>Contact</h2>
+            <form class="margin-auto contactContainer">
+              <p>Send me a email, shoot me a message or stalk me on any of my socials down below!</p>
+              <div class="form-group nameGroup">
+                <label for="name">Name:</label>
+                <input type="text" name="name">
+              </div>
+              <div class="form-group emailGroup">
+                <label for="email">Email: </label>
+                <input type="text" name="email">
+              </div>
+              <div class="form-group messageGroup">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+              </div>
+              <button type="button" class="buttonContact">SEND</button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>

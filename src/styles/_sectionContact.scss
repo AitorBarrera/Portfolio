@@ -1,0 +1,73 @@
+@use "globals" as *;
+
+.sectionContact{
+    h2{
+        text-align: center;
+        color: $color-yellow;
+        text-shadow: $text-shadow-dark-red;
+    }
+
+    .contactContainer{
+        padding:  1rem 2rem;
+
+        border: 3px solid $color-yellow;
+        border-radius: 16px;
+        background-color: $color-dark-red;
+        @include grid-container-columns(6);
+
+        p{
+            text-align: center;
+            grid-column: 2 / 6;
+        }
+
+        .form-group{
+            @include flex-container(column,space-between,start);
+
+            label{
+                @include font(smallParagraph);
+                color: $color-yellow;
+                font-weight: 800;
+            }
+
+            input, textarea{
+                height: 100%;
+                width: 100%;
+                padding: 10px;
+
+                background-color: $color-red;
+                color: $color-yellow;
+
+                border: 0;
+                border-bottom: 5px solid $color-yellow;
+                border-radius: 0 0 5px 5px;
+
+                box-shadow: 4px 4px $color-dark-red;
+            }
+        }
+
+        .nameGroup{
+            grid-column: 2 / 4;
+        }
+
+        .emailGroup{
+            grid-column: 4 / 6;
+        }
+
+        .messageGroup{
+            grid-column: 2 / 6;
+            grid-row: 3/6;
+        }
+
+        .buttonContact{
+            grid-column: 3 / 5;
+            margin-top: 1rem;
+            background-color: $color-yellow;
+            color: $color-red;
+            @include font(paragraph);
+            font-weight: 800;
+            border: 3px solid $color-red;
+            border-radius: 16px;
+            cursor: pointer;
+        }
+    }
+}
