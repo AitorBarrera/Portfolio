@@ -9,7 +9,7 @@
     }
 
     .swiper {
-        height: 510px;
+        height: 610px;
         border: $border-width-md solid $color-orange;
         border-radius: 16px;
     
@@ -70,11 +70,21 @@
                     .repository{
                         background-color: $color-dark-red;
                         color: $color-yellow;
+
+                        &:hover{
+                            background-color: $color-yellow;
+                            color: $color-dark-red;
+                        }
                     }
                     
                     .page{
                         background-color: $color-dark-red;
                         color: $color-green;
+
+                        &:hover{
+                            background-color: $color-green;
+                            color: $color-dark-red;
+                        }
                     }
                 }
 

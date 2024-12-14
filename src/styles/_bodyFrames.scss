@@ -2,7 +2,8 @@
 
 .frameRed{
     display: flex;
-    position: relative;
+    position: sticky;
+    top: 0px;
     margin: 2rem; 
 
     border-color: $color-dark-red !important;

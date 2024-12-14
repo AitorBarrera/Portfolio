@@ -3,6 +3,12 @@
 section.sectionAboutMe{
     text-align: center;
 
+    h1{
+        margin-bottom: 40px;
+
+        
+    }
+
     p.presentation{
         text-align: justify;
         margin: 1rem 0;
@@ -11,6 +17,7 @@ section.sectionAboutMe{
     h2{
         color: $color-orange;
     }
+
     .professionalNetworkRow{
         margin-top: 2rem;
 

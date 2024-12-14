@@ -9,21 +9,7 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  thumbs: {
-    swiper: swiper,
-  },
   grabCursor: true,
-  effect: "creative",
-  creativeEffect: {
-    prev: {
-      shadow: true,
-      translate: ["-120%", 0, -500],
-    },
-    next: {
-      shadow: true,
-      translate: ["120%", 0, -500],
-    },
-  },
   pagination: {
     el: ".swiper-pagination",
   },

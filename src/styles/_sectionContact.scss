@@ -8,6 +8,7 @@
     }
 
     margin-bottom: 3rem;
+
     .contactContainer{
         padding:  1rem 2rem;
 
@@ -21,9 +22,25 @@
             @include flex-container(column,space-between,center);
         }
 
-        p{
+        .paragraph{
+            @include flex-container(column,space-between,center);
+            display: flex;
             text-align: center;
             grid-column: 2 / 6;
+        }
+
+        .iconsForm{
+            width: 100%;
+            @include flex-container(row, space-evenly, center);
+
+            grid-column: 2 / 6;
+            grid-row: 1 /2;
+
+            padding-top: 0.5rem;
+
+            img{
+                width: 40px;
+            }
         }
 
         .form-group{
@@ -39,6 +56,7 @@
                 height: 80%;
                 width: 100%;
                 padding: 10px;
+                font-size: 20px;
 
                 background-color: $color-red;
                 color: $color-green;
@@ -88,6 +106,12 @@
             border: 3px solid $color-green;
             border-radius: 16px;
             cursor: pointer;
+
+            &:hover{
+                color: $color-red;
+                background-color: $color-green;
+                border-color: $color-red;
+            }
 
             @include respond-to(medium){
                 width: 70%;
