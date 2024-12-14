@@ -17,6 +17,10 @@ section.sectionAboutMe{
                 width: 31%;
                 color: $color-dark-red;
                 
+                @include respond-to(large){
+                    width: 100%;
+                }
+
                 .cardContainer{
                     @include flex-container(row, space-between, center);
                     height: 100%;
@@ -25,14 +29,18 @@ section.sectionAboutMe{
                         padding: 0.5rem 0 0 0;
                         width: 35%;
 
-                        img{
-                            color: $color-dark-red;
-                            width: 100%;
+                        i{
+                            color: $color-orange;
+                            font-size: 5rem;
                         }
                     }
 
                     .text{
                         width: 65%;
+
+                        h3{
+                            color: $color-orange;
+                        }
 
                         p{
                             text-align: center;

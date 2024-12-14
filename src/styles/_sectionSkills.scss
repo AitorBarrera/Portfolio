@@ -3,7 +3,42 @@
 .sectionSkills{
     h2{
         text-align: center;
-        color: $color-yellow;
+        color: $color-red;
         text-shadow: $text-shadow-dark-red;
+    }
+  
+    .skillsContainer{
+        padding:  1rem 2rem;
+        text-align: center;
+
+        border: $border-width-md solid $color-red;
+        border-radius: 16px;
+        background-color: $color-dark-red;
+    
+        .skillsFrontendContainer{
+            h3{
+                color: $color-orange;
+            }
+        }
+
+        .containerSkills{
+            @include flex-container(row, space-between, center);
+
+            .skillsBackendContainer{
+                width: 48%;
+
+                h3{
+                    color: $color-yellow;
+                }
+            }
+
+            .skillsDesignContainer{
+                width: 48%;
+
+                h3{
+                    color: $color-green;
+                }
+            }
+        }
     }
 }

@@ -3,14 +3,14 @@
 .sectionContact{
     h2{
         text-align: center;
-        color: $color-yellow;
+        color: $color-green;
         text-shadow: $text-shadow-dark-red;
     }
 
     .contactContainer{
         padding:  1rem 2rem;
 
-        border: 3px solid $color-yellow;
+        border: $border-width-md solid $color-green;
         border-radius: 16px;
         background-color: $color-dark-red;
         @include grid-container-columns(6);
@@ -25,7 +25,7 @@
 
             label{
                 @include font(smallParagraph);
-                color: $color-yellow;
+                color: $color-green;
                 font-weight: 800;
             }
 
@@ -35,10 +35,10 @@
                 padding: 10px;
 
                 background-color: $color-red;
-                color: $color-yellow;
+                color: $color-green;
 
                 border: 0;
-                border-bottom: 5px solid $color-yellow;
+                border-bottom: 5px solid $color-green;
                 border-radius: 0 0 5px 5px;
 
                 box-shadow: 4px 4px $color-dark-red;
@@ -61,10 +61,11 @@
         .buttonContact{
             grid-column: 3 / 5;
             margin-top: 1rem;
-            background-color: $color-yellow;
+            background-color: $color-green;
             color: $color-red;
             @include font(paragraph);
-            font-weight: 800;
+
+            font-weight: 900;
             border: 3px solid $color-red;
             border-radius: 16px;
             cursor: pointer;

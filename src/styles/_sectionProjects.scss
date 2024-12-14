@@ -4,6 +4,77 @@
     h2{
         text-align: center;
         color: $color-yellow;
-        text-shadow: $text-shadow-dark-red; 
+        text-shadow: $text-shadow-dark-red;
     }
+
+    .swiper {
+        height: 410px;
+        border: $border-width-md solid $color-dark-red;
+        border-radius: 16px;
+    
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    
+        .swiper-slide{
+            position: relative;
+    
+            .descriptionSwiper{
+                padding: 1rem;
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+    
+                background-color: rgba(0, 0, 0, 0.616);
+    
+                @include flex-container(row,space-between,center);
+                
+                .textSwiper{
+                    flex: 1 1 auto;
+                }
+    
+                .titleSwiper{
+                    font-size: 32px;
+                    color: $color-orange;
+                    font-weight: 900;
+                    margin-bottom: 1rem
+                }
+    
+                .buttonsGroup{
+                    @include flex-container(column,space-between,center);
+    
+                    a{
+                        @include flex-container(row,space-between,center);
+                        font-size: 18px;
+                        padding: 1rem 1.5rem;
+                        border-radius: 16px;
+                        margin: 5px 0;
+                        width: 8rem;
+                        font-weight: 900;
+                        border: 3px solid $color-black;
+                    }
+    
+                    .repository{
+                        background-color: $color-dark-red;
+                        color: $color-yellow;
+                    }
+                    
+                    .page{
+                        background-color: $color-dark-red;
+                        color: $color-green;
+                    }
+                }
+            }
+        }
+    
+        .swiper-button-prev, .swiper-button-next{
+            color: $color-dark-red;
+        }
+        
+        .swiper-button-prev::after, .swiper-button-next::after{
+            font-size: 3rem;
+            margin: 0 2rem;
+        }
+      }
 }
