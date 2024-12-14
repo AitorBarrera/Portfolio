@@ -7,6 +7,9 @@ section.sectionAboutMe{
         text-align: justify;
     }
 
+    h2{
+        color: $color-orange;
+    }
     .professionalNetworkRow{
         margin-top: 2rem;
 
@@ -17,6 +20,10 @@ section.sectionAboutMe{
                 width: 31%;
                 color: $color-dark-red;
                 
+                hr{
+                    color: $color-orange;
+                }
+
                 @include respond-to(large){
                     width: 100%;
                 }

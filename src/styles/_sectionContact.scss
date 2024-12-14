@@ -14,6 +14,7 @@
         border-radius: 16px;
         background-color: $color-dark-red;
         @include grid-container-columns(6);
+        gap: 20px;
 
         p{
             text-align: center;
@@ -30,7 +31,7 @@
             }
 
             input, textarea{
-                height: 100%;
+                height: 80%;
                 width: 100%;
                 padding: 10px;
 
@@ -41,7 +42,16 @@
                 border-bottom: 5px solid $color-green;
                 border-radius: 0 0 5px 5px;
 
-                box-shadow: 4px 4px $color-dark-red;
+                box-shadow: 8px 8px $color-dark-red;
+            }
+
+            textarea{
+                height: 100%;
+            }
+            
+            input::placeholder, textarea::placeholder{
+                color: $color-green;
+                opacity: 70%;
             }
         }
 
@@ -55,18 +65,22 @@
 
         .messageGroup{
             grid-column: 2 / 6;
-            grid-row: 3/6;
+            grid-row: 3/5;
+
+            textarea{
+                resize: none;
+            }
         }
 
         .buttonContact{
             grid-column: 3 / 5;
-            margin-top: 1rem;
-            background-color: $color-green;
-            color: $color-red;
+            margin: 0.5rem;
+            background-color: $color-red;
+            color: $color-green;
             @include font(paragraph);
 
             font-weight: 900;
-            border: 3px solid $color-red;
+            border: 3px solid $color-green;
             border-radius: 16px;
             cursor: pointer;
         }

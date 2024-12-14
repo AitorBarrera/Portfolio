@@ -21,7 +21,8 @@
             }
         }
 
-        .containerSkills{
+        .containerOtherSkills{
+            margin-top: 1rem;
             @include flex-container(row, space-between, center);
 
             .skillsBackendContainer{
@@ -29,6 +30,10 @@
 
                 h3{
                     color: $color-yellow;
+                }
+
+                .skillsBackendSwiper{
+                    border-color: $color-yellow;
                 }
             }
 
@@ -38,7 +43,100 @@
                 h3{
                     color: $color-green;
                 }
+
+                .skillsBackendSwiper{
+                    border-color: $color-green;
+                }
             }
         }
     }
+
+    .swiper {
+        width: 100%;
+        height: 200px;
+        padding: 1.5rem;
+        
+        border: $border-width-md solid $color-orange;
+        border-radius: $border-radius-md;
+
+        background-color: $color-red;
+      }
+  
+      .swiper-slide {
+        max-height: 100%;
+
+        .card{
+            text-align: center;
+            height: 100%;
+            padding: 0.5rem;
+            background-color: $color-dark-red;
+            border: $border-width-md solid;
+            border-radius: $border-radius-md;
+
+            img{
+                display: block;
+                width: 100%;
+                height: 70%;
+                width: 70%;
+                margin: 0 auto
+            }
+
+            p{
+                font-weight: 900;
+            }
+
+            &.cardHTML{
+                @include logoCardColors($logo-html);
+            }
+
+            &.cardCSS{
+                @include logoCardColors($logo-css);
+            }
+
+            &.cardJS{
+                @include logoCardColors($logo-js);
+            }
+
+            &.cardBS{
+                @include logoCardColors($logo-bootstrap);
+            }
+            
+            &.cardSASS{
+                @include logoCardColors($logo-sass);
+            }
+
+            &.cardNode{
+                @include logoCardColors($logo-nodejs);
+            }
+
+            &.cardReact{
+                @include logoCardColors($logo-react);
+            }
+
+            &.cardSQL{
+                @include logoCardColors($logo-sql);
+            }
+
+            &.cardPLSQL{
+                @include logoCardColors($logo-plsql);
+            }
+
+            &.cardJava{
+                @include logoCardColors($logo-java);
+            }
+
+            &.cardFigma{
+                @include logoCardColors($logo-figma);
+            }
+
+            &.cardGIMP{
+                @include logoCardColors($logo-gimp);
+            }
+
+            &.cardPaint{
+                @include logoCardColors($logo-paint);
+            }
+        }
+      }
 }
+

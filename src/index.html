@@ -21,7 +21,7 @@
         <div class="frameYellow">
           <section class="sectionAboutMe">
             <div class="sectionAboutMeContainer my-3">
-              <h2 class="margin-auto">HELLO, I AM</h2>
+              <!-- <h2 class="margin-auto">HELLO, I AM</h2> -->
               <h1>AITOR GONZALEZ BARRERA</h1>
               <div class="margin-auto">
                 <h3>FULL-STACK DEVELOPER</h3>
@@ -145,16 +145,105 @@
               <div class="skillsContainer">
                 <div class="skillsFrontendContainer">
                   <h3>Front-End</h3>
-                  <div class="skillsFrontendSwiper"></div>
+                  <div class="swiper swiperSkillsBig skillsFrontendSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card cardHTML">
+                          <img src="assets/icons_skills/html5.svg" alt="">
+                          <p>HTML</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card cardCSS">
+                          <img src="assets/icons_skills/css3.svg" alt="">
+                          <p>CSS</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card cardJS">
+                          <img src="assets/icons_skills/js.svg" alt="">
+                          <p>JavaScript</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card cardBS">
+                          <img src="assets/icons_skills/bootstrap.svg" alt="">
+                          <p>BootStrap</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card cardSASS">
+                          <img src="assets/icons_skills/sass.svg" alt="">
+                          <p>SASS</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card cardNode">
+                          <img src="assets/icons_skills/node.svg" alt="">
+                          <p>Node</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card cardReact">
+                          <img src="assets/icons_skills/react.svg" alt="">
+                          <p>React</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="containerSkills">
+                <div class="containerOtherSkills">
                   <div class="skillsBackendContainer">
                     <h3>Back-End</h3>
-                    <div class="skillsBackendSwiper"></div>
+                    <div class="swiper swiperSkillsSmall skillsBackendSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="card cardSQL">
+                            <img src="assets/icons_skills/sql.svg" alt="">
+                            <p>SQL</p>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="card cardPLSQL">
+                            <img src="assets/icons_skills/plsql.svg" alt="">
+                            <p>PL/SQL</p>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="card cardJava">
+                            <img src="assets/icons_skills/java.svg" alt="">
+                            <p>Java</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="skillsDesignContainer">
                     <h3>Design</h3>
-                    <div class="skillsBackendSwiper"></div>
+                    <div class="swiper swiperSkillsSmall skillsBackendSwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="card cardFigma">
+                            <img src="assets/icons_skills/figma.svg" alt="">
+                            <p>FIGMA</p>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="card cardGIMP">
+                            <img src="assets/icons_skills/gimp.svg" alt="">
+                            <p>GIMP</p>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="swiper-slide">
+                            <div class="card cardPaint">
+                              <img src="assets/icons_skills/palette-solid.svg" alt="">
+                              <p>MS PAINT</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -165,16 +254,14 @@
             <form class="margin-auto contactContainer">
               <p>Send me a email, shoot me a message or stalk me on any of my socials down below!</p>
               <div class="form-group nameGroup">
-                <label for="name">Name:</label>
-                <input type="text" name="name">
+                <input type="text" name="name" placeholder="name">
               </div>
               <div class="form-group emailGroup">
-                <label for="email">Email: </label>
-                <input type="text" name="email">
+
+                <input type="text" name="email" placeholder="email">
               </div>
               <div class="form-group messageGroup">
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" rows="5"></textarea>
+                <textarea name="message" id="message" rows="2" placeholder="message"></textarea>
               </div>
               <button type="button" class="buttonContact">SEND</button>
             </form>

@@ -44,3 +44,11 @@
   grid-auto-rows: 1fr;
   gap: 10px;
 }
+
+@mixin logoCardColors($color){
+  border-color: $color;
+  
+  p{
+    color: $color;
+  }
+}

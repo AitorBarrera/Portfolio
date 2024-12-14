@@ -18,6 +18,7 @@ $font-family-Figtree: Figtree;
 $font-family-Lato: Lato;
 /* Mode 1 */
 /* color */
+$color-color: #ffffff;
 $color-black: #28231d;
 $color-dark-red: #472d30;
 $color-green: #c9cba3;
@@ -27,11 +28,17 @@ $color-white: #fffada;
 $color-yellow: #ffe1a8;
 $logo-bootstrap: #8319fb;
 $logo-css: #004ce8;
+$logo-figma: #12d187;
+$logo-gimp: #8a8372;
 $logo-html: #e4552d;
+$logo-java: #ee272b;
 $logo-js: #f7e025;
 $logo-nodejs: #87cf30;
+$logo-paint: #fec644;
+$logo-plsql: #ff5944;
 $logo-react: #6cdbf9;
 $logo-sass: #ce6b9c;
+$logo-sql: #087cd8;
 /* Mode 1 */
 /* number */
 $font-line-height-tag: 0.75rem;
@@ -53,8 +60,8 @@ $font-typography-titles: Bright Royale;
 /* Mode 1 */
 /* number */
 $margin-x-container: 18rem;
-
 $border-width-md: 0.3rem;
+$border-radius-md: 20px;
 
 $text-shadow-dark-red: 4px 4px $color-dark-red;
 
