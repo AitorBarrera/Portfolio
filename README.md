@@ -28,7 +28,7 @@ This is my portfolio where I introduce myself nad show you what i have done over
 
 ## 2. Enlaces de interés
 
-[Enlace a la página desplegada en GitHub Pages](https://github.com/AitorBarrera/Portfolio)
+[Enlace a la página desplegada en GitHub Pages](https://aitorbarrera.github.io/Portfolio/)
 
 [Enlace para ver el diseño en figma](https://www.figma.com/design/8jkb77ZRE3ETOIMOYG592R/Portfolio?node-id=0-1&t=KflQZYpmE9v1JeSx-1)
 
