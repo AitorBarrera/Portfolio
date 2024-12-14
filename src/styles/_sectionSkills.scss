@@ -3,7 +3,7 @@
 .sectionSkills{
     h2{
         text-align: center;
-        color: $color-red;
+        color: $color-yellow;
         text-shadow: $text-shadow-dark-red;
     }
   
@@ -19,11 +19,25 @@
             h3{
                 color: $color-orange;
             }
+
+            .swiper-button-prev, .swiper-button-next{
+                color: $color-orange;
+                text-shadow: 2px 2px black;
+            }
+            
+            .swiper-button-prev::after, .swiper-button-next::after{
+                font-size: 3rem;
+                margin: 0 2rem;
+            }
         }
 
         .containerOtherSkills{
             margin-top: 1rem;
             @include flex-container(row, space-between, center);
+
+            @include respond-to(medium){
+                flex-direction: column;
+            }
 
             .skillsBackendContainer{
                 width: 48%;
@@ -34,6 +48,20 @@
 
                 .skillsBackendSwiper{
                     border-color: $color-yellow;
+                }
+
+                .swiper-button-prev, .swiper-button-next{
+                    color: $color-yellow;
+                    text-shadow: 2px 2px black;
+                }
+                
+                .swiper-button-prev::after, .swiper-button-next::after{
+                    font-size: 3rem;
+                    margin: 0 2rem;
+                }
+                
+                @include respond-to(medium){
+                    width: 100%;
                 }
             }
 
@@ -47,7 +75,26 @@
                 .skillsBackendSwiper{
                     border-color: $color-green;
                 }
+
+                @include respond-to(medium){
+                    width: 100%;
+                    margin-top: 20px;
+                }
+
+                .swiper-button-prev, .swiper-button-next{
+                    color: $color-green;
+                    text-shadow: 2px 2px black;
+                }
+                
+                .swiper-button-prev::after, .swiper-button-next::after{
+                    font-size: 3rem;
+                    margin: 0 2rem;
+                }
             }
+        }
+        
+        @include respond-to(medium){
+            padding:  1rem;
         }
     }
 

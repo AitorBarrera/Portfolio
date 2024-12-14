@@ -3,18 +3,21 @@
 .sectionProjects{
     h2{
         text-align: center;
-        color: $color-orange;
+        color: $color-yellow;
         text-shadow: $text-shadow-dark-red;
+        
     }
 
     .swiper {
-        height: 410px;
+        height: 510px;
         border: $border-width-md solid $color-orange;
         border-radius: 16px;
     
         img{
             height: 100%;
             width: 100%;
+            object-fit: cover;
+            object-position: center;
         }
     
         .swiper-slide{
@@ -29,21 +32,30 @@
                 background-color: rgba(0, 0, 0, 0.616);
     
                 @include flex-container(row,space-between,center);
-                
-                .textSwiper{
-                    flex: 1 1 auto;
-                }
     
                 .titleSwiper{
                     font-size: 32px;
                     color: $color-orange;
                     font-weight: 900;
-                    margin-bottom: 1rem
+                    
+                    @include respond-to(medium){
+                        font-size: 1rem;
+                    }
                 }
     
                 .buttonsGroup{
                     @include flex-container(column,space-between,center);
-    
+                    @include respond-to(medium){
+                        width: 100%;
+                        justify-content: space-evenly;
+                        flex-direction: row;
+                    }
+                    
+                    @include respond-to(small){
+                        width: 100%;
+                        flex-direction: column;
+                    }
+
                     a{
                         @include flex-container(row,space-between,center);
                         font-size: 18px;
@@ -65,6 +77,10 @@
                         color: $color-green;
                     }
                 }
+
+                @include respond-to(medium){
+                    flex-direction: column;
+                }
             }
         }
     
@@ -77,5 +93,5 @@
             font-size: 3rem;
             margin: 0 2rem;
         }
-      }
+    }
 }

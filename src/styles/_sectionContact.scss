@@ -3,18 +3,23 @@
 .sectionContact{
     h2{
         text-align: center;
-        color: $color-green;
+        color: $color-yellow;
         text-shadow: $text-shadow-dark-red;
     }
 
+    margin-bottom: 3rem;
     .contactContainer{
         padding:  1rem 2rem;
 
         border: $border-width-md solid $color-green;
         border-radius: 16px;
         background-color: $color-dark-red;
-        @include grid-container-columns(6);
+        @include grid-container-columns(6); 
         gap: 20px;
+
+        @include respond-to(medium){
+            @include flex-container(column,space-between,center);
+        }
 
         p{
             text-align: center;
@@ -83,6 +88,11 @@
             border: 3px solid $color-green;
             border-radius: 16px;
             cursor: pointer;
+
+            @include respond-to(medium){
+                width: 70%;
+                font-size: 16px;
+            }
         }
     }
 }
