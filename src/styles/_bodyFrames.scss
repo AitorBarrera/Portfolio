@@ -3,11 +3,37 @@
 .frameRed{
     margin: 2rem;
     display: flex;
+    position: relative;
+
+    .contactIcons{
+        position: absolute;
+        width: 200px;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+ 
+        margin-bottom: 1rem;
+        color: $color-dark-red;
+        text-shadow: 0px 0px $color-black;
+
+        @include flex-container(row, space-between, center)
+    }
 
     .frameOrange{
         border-color: $color-orange;
         display: flex;
         width: 100%;
+        position: relative;
+
+        > h3{
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+
+            color: $color-dark-red;
+            text-shadow: 0px 0px $color-black;
+        }
 
         .frameYellow{
             border-color: $color-yellow;

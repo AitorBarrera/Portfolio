@@ -19,14 +19,14 @@ section.sectionAboutMe{
                 
                 .cardContainer{
                     @include flex-container(row, space-between, center);
+                    height: 100%;
 
                     .imgContainer{
                         padding: 0.5rem 0 0 0;
                         width: 35%;
-                        
 
                         img{
-                            fill: $color-dark-red;
+                            color: $color-dark-red;
                             width: 100%;
                         }
                     }
@@ -39,6 +39,11 @@ section.sectionAboutMe{
                         }
                     }
                 }
+            }
+
+            @include respond-to(large){
+                flex-direction: column;
+                align-items: center;
             }
         }
     }

@@ -20,17 +20,20 @@ h1{
     @include font(h1);
     color: $color-yellow;
     text-shadow: 4px 4px $color-dark-red;
+    letter-spacing: 3px;
 }
 
 h2{
     @include font(h2);
     color: $color-red;
+    letter-spacing: 3px;
 }
 
 h3{
     @include font(h3);
     color: $color-yellow;
     text-shadow: 4px 4px $color-dark-red;
+    letter-spacing: 3px;
 }
 
 p{
@@ -57,11 +60,21 @@ a{
 }
 
 .margin-auto{
-    margin: $margin-x-container;
+    margin-left: $margin-x-container;
+    margin-right: $margin-x-container;
+
+    @include respond-to(large){
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .row{
     @include respond-to(medium){
         flex-direction: column;
     }
+}
+
+.my-3{
+    margin: 3rem 0;
 }

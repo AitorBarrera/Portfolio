@@ -3,8 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Portfolio AItor</title>
 </head>
 
@@ -14,7 +20,7 @@
       <div class="frameOrange">
         <div class="frameYellow">
           <section class="sectionAboutMe">
-            <div class="sectionAboutMeContainer">
+            <div class="sectionAboutMeContainer my-3">
               <h2 class="margin-auto">HELLO, I AM</h2>
               <h1>AITOR GONZALEZ BARRERA</h1>
               <div class="margin-auto">
@@ -74,33 +80,67 @@
               </div>
             </div>
           </section>
-          <section class="sectionProjects">
+          <section class="sectionProjects margin-auto">
             <h2>Projects</h2>
-            <div class="swiper">
-              <!-- Additional required wrapper -->
+            <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="assets/imgProjects/home_page.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/imgProjects/vango.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/imgProjects/portfolio.png" alt=""></div>
-                ...
+                <div class="swiper-slide">
+                  <img src="assets/imgProjects/home_page.png" alt="">
+                  <div class="descriptionSwiper">
+                    <div class="textSwiper">
+                      <p class="titleSwiper">POKEMON TCG EXPLORER</p>
+                      <p class="">View and find the coolest pokemon cards and save them in your favorites collection</p>
+                    </div>
+                    <div class="buttonsGroup">
+                      <a class="repository" href="https://github.com/AitorBarrera/pokemon-tcg-webapp"><i class="fa-brands fa-github"></i> REPO</a>
+                      <a class="page" href="https://aitorbarrera.github.io/pokemon-tcg-webapp/"><i class="fa fa-window-restore" aria-hidden="true"></i> PAGE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/imgProjects/vango.png" alt="">
+                  <div class="descriptionSwiper">
+                    <div class="textSwiper">
+                      <p class="titleSwiper">Vango - La noche Estrellada</p>
+                      <p class="">Have a quick look a what and why of the painting "The starry night"</p>
+                    </div>
+                    <div class="buttonsGroup">
+                      <a class="repository" href="https://github.com/AitorBarrera/vite_sass/tree/main"><i class="fa-brands fa-github"></i> REPO</a>
+                      <a class="page" href="https://aitorbarrera.github.io/vite_sass/"><i class="fa fa-window-restore" aria-hidden="true"></i> PAGE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/imgProjects/portfolio.png" alt="">
+                  <div class="descriptionSwiper">
+                    <div class="textSwiper">
+                      <p class="titleSwiper">PORTFOLIO</p>
+                      <p class="">Check and read my own portfolio.</p>
+                    </div>
+                    <div class="buttonsGroup">
+                      <a class="repository" href="https://github.com/AitorBarrera/Portfolio"><i class="fa-brands fa-github"></i> REPO</a>
+                      <a class="page"><i class="fa fa-window-restore" aria-hidden="true"></i> PAGE</a>
+                    </div>
+                  </div>
+                </div>
+
               </div>
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
-            
+
               <!-- If we need navigation buttons -->
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
-            
-              <!-- If we need scrollbar -->
+
               <div class="swiper-scrollbar"></div>
             </div>
           </section>
-          <section class="sectionSkills">
+          <section class="sectionSkills my-3">
             <h2>Skills</h2>
 
           </section>
-          <section class="sectionContact">
+          <section class="sectionContact my-3">
             <h2>Contact</h2>
             <form class="margin-auto contactContainer">
               <p>Send me a email, shoot me a message or stalk me on any of my socials down below!</p>
@@ -120,10 +160,17 @@
             </form>
           </section>
         </div>
+        <h3>&copy; AITOR GONZALEZ BARRERA</h3>
+      </div>
+      <div class="contactIcons">
+        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <i class="fa-brands fa-skype" aria-hidden="true"></i>
       </div>
     </div>
   </div>
   <script type="module" src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
