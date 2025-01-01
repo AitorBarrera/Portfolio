@@ -6,8 +6,10 @@ import 'swiper/css';
 var swiper = new Swiper(".mySwiper", { 
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: "#buttonNext",
+    prevEl: "#buttonPrev",
+    allowSlideNext: true,
+    allowSlidePrev: true
   },
   grabCursor: true,
   pagination: {
